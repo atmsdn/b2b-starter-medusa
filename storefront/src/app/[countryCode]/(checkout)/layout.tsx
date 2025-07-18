@@ -14,7 +14,7 @@ export default function CheckoutLayout({
           <LocalizedClientLink className="hover:text-ui-fg-base" href="/">
             <h1 className="text-base font-medium flex items-center">
               <LogoIcon className="inline mr-2" />
-              Medusa B2B Starter
+              Assimilate Technologies
             </h1>
           </LocalizedClientLink>
         </nav>
@@ -23,7 +23,7 @@ export default function CheckoutLayout({
         {children}
       </div>
       <div className="py-4 w-full flex items-center justify-center">
-        <MedusaCTA />
+        {/* <MedusaCTA /> */}
       </div>
     </div>
   )

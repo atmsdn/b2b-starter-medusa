@@ -6,6 +6,7 @@ import Button from "@/modules/common/components/button"
 import ShoppingBag from "@/modules/common/icons/shopping-bag"
 import { useState } from "react"
 import BulkTableQuantity from "../bulk-table-quantity"
+import { sdk } from "@/lib/config"
 
 const ProductVariantsTable = ({
   product,
@@ -70,7 +71,6 @@ const ProductVariantsTable = ({
 
     setIsAdding(false)
   }
-
   return (
     <div className="flex flex-col gap-6">
       <div className="overflow-x-auto p-px">
@@ -135,7 +135,7 @@ const ProductVariantsTable = ({
         </Table>
       </div>
       <Button
-        onClick={handleAddToCart}
+        onClick={() => handleAddToCart()}
         variant="primary"
         className="w-full h-10"
         isLoading={isAdding}

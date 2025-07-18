@@ -11,6 +11,7 @@ import { RequestQuotePrompt } from "@/modules/quotes/components/request-quote-pr
 import SkeletonAccountButton from "@/modules/skeletons/components/skeleton-account-button"
 import SkeletonCartButton from "@/modules/skeletons/components/skeleton-cart-button"
 import SkeletonMegaMenu from "@/modules/skeletons/components/skeleton-mega-menu"
+import Image from "next/image"
 import { Suspense } from "react"
 
 export async function NavigationHeader() {
@@ -26,9 +27,8 @@ export async function NavigationHeader() {
               className="hover:text-ui-fg-base flex items-center w-fit"
               href="/"
             >
+            <img src="/logo.png" alt="Logo" width={100} height={100} className="mr-2" />
               <h1 className="small:text-base text-sm font-medium flex items-center">
-                <LogoIcon className="inline mr-2" />
-                Medusa B2B Starter
               </h1>
             </LocalizedClientLink>
 

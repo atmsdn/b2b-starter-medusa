@@ -31,7 +31,9 @@ export const addToCartEventBus: CartAddEventBus = {
     }
   },
 
-  handler: () => {},
+  handler: () => {
+    console.log("Handler called") 
+  },
 
   registerCartAddHandler(handler: CartAddEventHandler) {
     this.handler = handler

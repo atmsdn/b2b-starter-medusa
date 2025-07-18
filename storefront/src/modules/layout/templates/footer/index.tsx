@@ -153,7 +153,7 @@ export default async function Footer() {
           <Text className="txt-compact-small">
             © {new Date().getFullYear()} Medusa Store. All rights reserved.
           </Text>
-          <MedusaCTA />
+          {/* <MedusaCTA /> */}
         </div>
       </div>
     </footer>

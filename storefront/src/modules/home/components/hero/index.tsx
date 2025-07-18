@@ -32,15 +32,6 @@ const Hero = () => {
             See our widest selection of electronics
           </p>
         </span>
-        <a
-          href="https://github.com/medusajs/b2b-starter-medusa"
-          target="_blank"
-        >
-          <Button variant="secondary" className="rounded-2xl">
-            <Github />
-            Github Repository
-          </Button>
-        </a>
       </div>
     </div>
   )
