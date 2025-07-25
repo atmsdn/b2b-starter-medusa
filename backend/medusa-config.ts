@@ -2,6 +2,7 @@ import { QUOTE_MODULE } from "./src/modules/quote";
 import { APPROVAL_MODULE } from "./src/modules/approval";
 import { COMPANY_MODULE } from "./src/modules/company";
 import { loadEnv, defineConfig, Modules } from "@medusajs/framework/utils";
+import { CATEGORY_IMAGE } from "src/modules/category_image";
 
 loadEnv(process.env.NODE_ENV!, process.cwd());
 
@@ -25,6 +26,9 @@ module.exports = defineConfig({
     },
     [APPROVAL_MODULE]: {
       resolve: "./modules/approval",
+    },
+    [CATEGORY_IMAGE]: {
+      resolve: "./modules/category_image",
     },
     [Modules.CACHE]: {
       resolve: "@medusajs/medusa/cache-inmemory",
