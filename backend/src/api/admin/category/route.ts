@@ -31,7 +31,7 @@ export const GET = async (
     const { data: product_category } = await query.graph({
         entity: "product_category",
         fields: [
-            "id", "name", "parent_category.name", "parent_category.id",
+            "*handle","id", "name", "parent_category.name", "parent_category.id",
             "category_image.category_id"
         ]
     });
